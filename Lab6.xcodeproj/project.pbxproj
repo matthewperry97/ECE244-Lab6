@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		342B2BBA1DF2191A0059D6B4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BB91DF2191A0059D6B4 /* main.cpp */; };
+		342B2BCB1DF219490059D6B4 /* easygl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC11DF219490059D6B4 /* easygl.cpp */; };
+		342B2BCC1DF219490059D6B4 /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC31DF219490059D6B4 /* graphics.cpp */; };
+		342B2BCD1DF219490059D6B4 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC51DF219490059D6B4 /* Shape.cpp */; };
+		342B2BCE1DF219490059D6B4 /* ShapeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC71DF219490059D6B4 /* ShapeArray.cpp */; };
+		342B2BCF1DF219490059D6B4 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC91DF219490059D6B4 /* Triangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,17 @@
 /* Begin PBXFileReference section */
 		342B2BB61DF219190059D6B4 /* Lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab6; sourceTree = BUILT_PRODUCTS_DIR; };
 		342B2BB91DF2191A0059D6B4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		342B2BC01DF219490059D6B4 /* easygl_constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easygl_constants.h; sourceTree = "<group>"; };
+		342B2BC11DF219490059D6B4 /* easygl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = easygl.cpp; sourceTree = "<group>"; };
+		342B2BC21DF219490059D6B4 /* easygl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easygl.h; sourceTree = "<group>"; };
+		342B2BC31DF219490059D6B4 /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphics.cpp; sourceTree = "<group>"; };
+		342B2BC41DF219490059D6B4 /* graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphics.h; sourceTree = "<group>"; };
+		342B2BC51DF219490059D6B4 /* Shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		342B2BC61DF219490059D6B4 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		342B2BC71DF219490059D6B4 /* ShapeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeArray.cpp; sourceTree = "<group>"; };
+		342B2BC81DF219490059D6B4 /* ShapeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeArray.h; sourceTree = "<group>"; };
+		342B2BC91DF219490059D6B4 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
+		342B2BCA1DF219490059D6B4 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,17 @@
 			isa = PBXGroup;
 			children = (
 				342B2BB91DF2191A0059D6B4 /* main.cpp */,
+				342B2BC01DF219490059D6B4 /* easygl_constants.h */,
+				342B2BC11DF219490059D6B4 /* easygl.cpp */,
+				342B2BC21DF219490059D6B4 /* easygl.h */,
+				342B2BC31DF219490059D6B4 /* graphics.cpp */,
+				342B2BC41DF219490059D6B4 /* graphics.h */,
+				342B2BC51DF219490059D6B4 /* Shape.cpp */,
+				342B2BC61DF219490059D6B4 /* Shape.h */,
+				342B2BC71DF219490059D6B4 /* ShapeArray.cpp */,
+				342B2BC81DF219490059D6B4 /* ShapeArray.h */,
+				342B2BC91DF219490059D6B4 /* Triangle.cpp */,
+				342B2BCA1DF219490059D6B4 /* Triangle.h */,
 			);
 			path = Lab6;
 			sourceTree = "<group>";
@@ -120,7 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342B2BCB1DF219490059D6B4 /* easygl.cpp in Sources */,
+				342B2BCF1DF219490059D6B4 /* Triangle.cpp in Sources */,
 				342B2BBA1DF2191A0059D6B4 /* main.cpp in Sources */,
+				342B2BCC1DF219490059D6B4 /* graphics.cpp in Sources */,
+				342B2BCE1DF219490059D6B4 /* ShapeArray.cpp in Sources */,
+				342B2BCD1DF219490059D6B4 /* Shape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +250,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 6BNUD54WA3;
+				HEADER_SEARCH_PATHS = /opt/X11/include;
+				OTHER_LDFLAGS = (
+					"-I/usr/X11R6/include",
+					"-L/usr/X11R6/lib",
+					"-lX11",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -226,6 +264,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 6BNUD54WA3;
+				HEADER_SEARCH_PATHS = /opt/X11/include;
+				OTHER_LDFLAGS = (
+					"-I/usr/X11R6/include",
+					"-L/usr/X11R6/lib",
+					"-lX11",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -249,6 +293,7 @@
 				342B2BBF1DF2191A0059D6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
