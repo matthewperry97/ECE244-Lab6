@@ -13,6 +13,9 @@
 		342B2BCD1DF219490059D6B4 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC51DF219490059D6B4 /* Shape.cpp */; };
 		342B2BCE1DF219490059D6B4 /* ShapeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC71DF219490059D6B4 /* ShapeArray.cpp */; };
 		342B2BCF1DF219490059D6B4 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342B2BC91DF219490059D6B4 /* Triangle.cpp */; };
+		34720FE21DF245A9004F2FDD /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34720FE01DF245A9004F2FDD /* Rectangle.cpp */; };
+		34720FE51DF245D4004F2FDD /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34720FE31DF245D4004F2FDD /* Circle.cpp */; };
+		34720FE81DF245FE004F2FDD /* Polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34720FE61DF245FE004F2FDD /* Polygon.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,12 @@
 		342B2BC81DF219490059D6B4 /* ShapeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeArray.h; sourceTree = "<group>"; };
 		342B2BC91DF219490059D6B4 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
 		342B2BCA1DF219490059D6B4 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		34720FE01DF245A9004F2FDD /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		34720FE11DF245A9004F2FDD /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		34720FE31DF245D4004F2FDD /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		34720FE41DF245D4004F2FDD /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		34720FE61DF245FE004F2FDD /* Polygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon.cpp; sourceTree = "<group>"; };
+		34720FE71DF245FE004F2FDD /* Polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polygon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,19 +83,49 @@
 			isa = PBXGroup;
 			children = (
 				342B2BB91DF2191A0059D6B4 /* main.cpp */,
+				34720FDD1DF24543004F2FDD /* Graphics */,
+				34720FDC1DF24538004F2FDD /* Shapes */,
+			);
+			path = Lab6;
+			sourceTree = "<group>";
+		};
+		34720FDC1DF24538004F2FDD /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				342B2BC51DF219490059D6B4 /* Shape.cpp */,
+				342B2BC61DF219490059D6B4 /* Shape.h */,
+				342B2BC71DF219490059D6B4 /* ShapeArray.cpp */,
+				342B2BC81DF219490059D6B4 /* ShapeArray.h */,
+				34720FDF1DF24568004F2FDD /* Types */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		34720FDD1DF24543004F2FDD /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
 				342B2BC01DF219490059D6B4 /* easygl_constants.h */,
 				342B2BC11DF219490059D6B4 /* easygl.cpp */,
 				342B2BC21DF219490059D6B4 /* easygl.h */,
 				342B2BC31DF219490059D6B4 /* graphics.cpp */,
 				342B2BC41DF219490059D6B4 /* graphics.h */,
-				342B2BC51DF219490059D6B4 /* Shape.cpp */,
-				342B2BC61DF219490059D6B4 /* Shape.h */,
-				342B2BC71DF219490059D6B4 /* ShapeArray.cpp */,
-				342B2BC81DF219490059D6B4 /* ShapeArray.h */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		34720FDF1DF24568004F2FDD /* Types */ = {
+			isa = PBXGroup;
+			children = (
 				342B2BC91DF219490059D6B4 /* Triangle.cpp */,
 				342B2BCA1DF219490059D6B4 /* Triangle.h */,
+				34720FE01DF245A9004F2FDD /* Rectangle.cpp */,
+				34720FE11DF245A9004F2FDD /* Rectangle.h */,
+				34720FE31DF245D4004F2FDD /* Circle.cpp */,
+				34720FE41DF245D4004F2FDD /* Circle.h */,
+				34720FE61DF245FE004F2FDD /* Polygon.cpp */,
+				34720FE71DF245FE004F2FDD /* Polygon.h */,
 			);
-			path = Lab6;
+			name = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +191,9 @@
 				342B2BBA1DF2191A0059D6B4 /* main.cpp in Sources */,
 				342B2BCC1DF219490059D6B4 /* graphics.cpp in Sources */,
 				342B2BCE1DF219490059D6B4 /* ShapeArray.cpp in Sources */,
+				34720FE81DF245FE004F2FDD /* Polygon.cpp in Sources */,
+				34720FE51DF245D4004F2FDD /* Circle.cpp in Sources */,
+				34720FE21DF245A9004F2FDD /* Rectangle.cpp in Sources */,
 				342B2BCD1DF219490059D6B4 /* Shape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

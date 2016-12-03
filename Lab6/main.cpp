@@ -6,12 +6,13 @@
  */
 
 #include <iostream>
+#include <assert.h>
+
 #include "Shape.h"
 #include "ShapeArray.h"
 #include "Triangle.h"
+
 using namespace std;
-
-
 
 /*********** Function declarations ***********/
 
