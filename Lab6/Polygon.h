@@ -18,9 +18,16 @@
 
 class Polygon : public Shape {
 private:
+    //Variables
+    t_point _vertices[100];
+    int _numVertices;
+    
+    //Functions
+    t_point getVecBetweenPoints (t_point start, t_point end) const;
+    float getMagnitude(float x, float y) const;
 public:
-    Polygon();
-    Polygon(const Polygon& that_);
+    Polygon(string name, string colour, float xcen, float ycen, t_point vertices[100], int numVertices);
+    Polygon(const Polygon& that);
     virtual ~Polygon();
     
     //From Shape class

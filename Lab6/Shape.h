@@ -12,8 +12,10 @@
 #ifndef SHAPE_H
 #define	SHAPE_H
 
-const int ShapePrecision = 1;  // Output floating point precision
+const int kShapePrecision = 1;  // Output floating point precision
+const int kInvalidInt = -68177126;
 
+#define PRINTDEBUG 1
 #define PI 3.141593   // This constant may be useful to you
 #include <string>
 #include "easygl.h"   // To get at graphics.

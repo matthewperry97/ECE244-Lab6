@@ -9,16 +9,21 @@
 #ifndef Rectangle_h
 #define Rectangle_h
 
-#include <iostream>
+
 #include <assert.h>
 
 #include "Shape.h"
+#include "easygl.h"
+
+#define PRINTDEBUG 1
 
 class Rectangle : public Shape {
 private:
-public:
-    Rectangle();
-    Rectangle(const Rectangle& that_);
+    float _width;
+    float _height;
+public:    
+    Rectangle(string name, string colour, float xcen, float ycen, float width, float height);
+    Rectangle(const Rectangle& that);
     virtual ~Rectangle();
     
     //From Shape class

@@ -8,8 +8,7 @@ using namespace std;
 // Constructor. First set up base class (Shape), then store the 
 // vertices, which are 3 (x,y) points giving offsets from the Shape center 
 // to each triangle vertex.
-Triangle::Triangle (string _name, string _colour, float _xcen, float _ycen,
-            float xcoords[3], float ycoords[3]) 
+Triangle::Triangle (string _name, string _colour, float _xcen, float _ycen, float xcoords[3], float ycoords[3]) 
               : Shape (_name, _colour, _xcen, _ycen) {
    
    for (int i = 0; i < 3; i++) {

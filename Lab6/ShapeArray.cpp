@@ -168,7 +168,7 @@ void ShapeArray::computeArea (stringstream& linestream) {
    for (int i = 0; i < nShape; i++) {
       totalArea += shapes[i]->computeArea();
    }
-   cout.precision (ShapePrecision);
+   cout.precision(kShapePrecision);
    cout.setf (ios::fixed);
    cout << "Total area: " << totalArea << endl;
 }
@@ -179,7 +179,7 @@ void ShapeArray::computePerimeter (stringstream& linestream) {
    for (int i = 0; i < nShape; i++) {
       totalPerimeter += shapes[i]->computePerimeter();
    }
-   cout.precision (ShapePrecision);
+   cout.precision(kShapePrecision);
    cout.setf (ios::fixed);
    cout << "Total perimeter: " << totalPerimeter << endl;
 }

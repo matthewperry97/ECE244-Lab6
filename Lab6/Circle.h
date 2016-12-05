@@ -9,18 +9,22 @@
 #ifndef Circle_h
 #define Circle_h
 
-#include <iostream>
 #include <assert.h>
 
+#include "easygl.h"
 #include "Shape.h"
 
 #define PRINTDEBUG 1
 
 class Circle : public Shape {
 private:
+    float _radius;
+    
+    t_point getVecBetweenPoints (t_point start, t_point end) const;
+    float getMagnitude(float x, float y) const;
 public:
-    Circle();
-    Circle(const Circle& that_);
+    Circle(string name, string colour, float xcen, float ycen, float radius);
+    Circle(const Circle& that);
     virtual ~Circle();
     
     //From Shape class
