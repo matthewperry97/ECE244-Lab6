@@ -57,28 +57,25 @@ void Polygon::scale (float scaleFac) {
 
 float Polygon::computeArea () const {
     float area = 0.0;
+    
 #if 0
     int j = _numVertices-1;  // The last vertex is the 'previous' one to the first
     
     for (int i=0; i<_numVertices; i++)
-    { area = area +  (_vertices[j].x+_vertices[i].x) * (_vertices[j].y-_vertices[i].y);
+    {
+        area = area +  (_vertices[j].x+_vertices[i].x) * (_vertices[j].y-_vertices[i].y);
         j = i;  //j is previous vertex to i
     }
-    return area/2;
 #else
     for (int index = 0; index < _numVertices; index += 1) {
-        t_point curr;
-        curr = _vertices[index];
-        
-        t_point next;
-        int nextIndex = (index == _numVertices - 1) ? 0:(index + 1);
-        next = _vertices[nextIndex];
-        
-        area += 0.5 * abs(curr.x * next.y - next.x * curr.y);
+        t_point curr = _vertices[index];
+        int nextIndex = (index == (_numVertices - 1)) ? 0:(index + 1);
+        t_point next = _vertices[nextIndex];
+        area += (curr.x * next.y) - (curr.y * next.x);
     }
 #endif
-    
-    return area;
+     
+    return abs(area) * 0.5;
 }
 
 
