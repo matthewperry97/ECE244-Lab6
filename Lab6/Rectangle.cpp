@@ -57,6 +57,7 @@ float Rectangle::computePerimeter () const {
 
 
 void Rectangle::draw (easygl* window) const {
+    //Gets corner points in x,y reference
     t_point topLeft;
     topLeft.x = getXcen() - _width / 2;
     topLeft.y = getYcen() - _height / 2;
@@ -71,8 +72,8 @@ void Rectangle::draw (easygl* window) const {
 
 
 bool Rectangle::pointInside (float x, float y) const {
-    //Get magnitude of displacement from center
-    t_point centerOffset;
+    //Compares max x,y offset of rectangle to the click location
+    t_point centerOffset;//To click location
     centerOffset.x = abs(x - getXcen());
     centerOffset.y = abs(y - getYcen());
     

@@ -15,7 +15,7 @@
 #include "Shape.h"
 #include "easygl.h"
 
-#define PRINTDEBUG 1
+#define PRINTDEBUG 0
 
 class Rectangle : public Shape {
 private:

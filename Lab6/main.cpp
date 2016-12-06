@@ -195,6 +195,7 @@ void addCirc(stringstream& linestream, ShapeArray& shapeArray) {
         return;
     }
     
+    //Create circle pointer with input values
     Circle* circle = new Circle(name, colour, xcen, ycen, radius);
     shapeArray.addShape(circle);
     

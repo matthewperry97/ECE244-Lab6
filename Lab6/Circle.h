@@ -14,7 +14,7 @@
 #include "easygl.h"
 #include "Shape.h"
 
-#define PRINTDEBUG 1
+#define PRINTDEBUG 0
 
 class Circle : public Shape {
 private:

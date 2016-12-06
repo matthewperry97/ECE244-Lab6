@@ -48,6 +48,7 @@ void Polygon::print () const {
 
 
 void Polygon::scale (float scaleFac) {
+    //Move each point out from center by scale factor
     for (int index = 0; index < _numVertices; index += 1) {
         _vertices[index].x *= scaleFac;
         _vertices[index].y *= scaleFac;
@@ -68,6 +69,7 @@ float Polygon::computeArea () const {
     }
 #else
     for (int index = 0; index < _numVertices; index += 1) {
+        //Get current point and next point (first if current is last). Uses general formula to find area
         t_point curr = _vertices[index];
         int nextIndex = (index == (_numVertices - 1)) ? 0:(index + 1);
         t_point next = _vertices[nextIndex];
@@ -82,7 +84,8 @@ float Polygon::computeArea () const {
 float Polygon::computePerimeter () const {
     float perimeter = 0;
     for (int index = 0; index < _numVertices; index += 1) {
-        if (index == (_numVertices - 1)) {
+        //Calculate length of segment between current vertice and next vertice
+        if (index == (_numVertices - 1)) {//Last point -> next point is first point
             t_point start;
             start.x = _vertices[index].x;
             start.y = _vertices[index].y;
@@ -112,6 +115,7 @@ float Polygon::computePerimeter () const {
 
 void Polygon::draw (easygl* window) const {
     t_point coords[_numVertices];  // This data type is in easygl_constants.h
+    //Gets vertices in x,y coordinates, not reference to center point
     for (int index = 0; index < _numVertices; index += 1) {
         coords[index].x = getXcen() + _vertices[index].x;
         coords[index].y = getYcen() + _vertices[index].y;

@@ -14,7 +14,7 @@
 
 #include "Shape.h"
 
-#define PRINTDEBUG 1
+#define PRINTDEBUG 0
 
 class Polygon : public Shape {
 private:

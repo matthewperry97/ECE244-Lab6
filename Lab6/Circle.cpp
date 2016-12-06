@@ -60,6 +60,7 @@ void Circle::draw (easygl* window) const {
 
 
 bool Circle::pointInside (float x, float y) const {
+    //Compare radius from center to point with set radius
     t_point center;
     center.x = getXcen();
     center.y = getYcen();
